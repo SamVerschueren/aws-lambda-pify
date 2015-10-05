@@ -1,6 +1,6 @@
 {
   "name": "aws-lambda-pify",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Promisifies an AWS lambda function",
   "license": "MIT",
   "repository": "SamVerschueren/aws-lambda-pify",
@@ -19,7 +19,12 @@
     "index.js"
   ],
   "keywords": [
-    ""
+    "aws",
+	"lambda",
+	"pify",
+	"promisify",
+	"promise",
+	"testing"
   ],
   "dependencies": {
     "aws-lambda-mock-context": "^0.2.0"
