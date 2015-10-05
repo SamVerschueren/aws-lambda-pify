@@ -1,11 +1,11 @@
 # aws-lambda-pify [![Build Status](https://travis-ci.org/SamVerschueren/aws-lambda-pify.svg?branch=master)](https://travis-ci.org/SamVerschueren/aws-lambda-pify)
 
-> Promisifies an AWS lambda function
+> Promisify an AWS lambda function
 
 
 ## Install
 
-```
+```sh
 $ npm install --save aws-lambda-pify
 ```
 
@@ -14,9 +14,11 @@ $ npm install --save aws-lambda-pify
 
 ```js
 const pify = require('aws-lambda-pify');
-const index = require('./index');
+const index = require('./');
 
-pify(index.handler)({foo: 'bar'}).then(() => {
+const fn = pify(index.handler);
+
+fn({foo: 'bar'}).then(() => {
     // success
 });
 ```
