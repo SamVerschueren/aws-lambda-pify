@@ -3,8 +3,10 @@ var context = require('aws-lambda-mock-context');
 
 module.exports = function (fn) {
 	return function (event) {
-		fn.apply(this, [event, context()]);
+		var ctx = context();
 
-		return context.Promise;
+		fn.apply(this, [event, ctx]);
+
+		return ctx.Promise;
 	};
 };

@@ -14,7 +14,7 @@ $ npm install --save aws-lambda-pify
 
 ```js
 const pify = require('aws-lambda-pify');
-const index = require('./index');
+const index = require('./');
 
 pify(index.handler)({foo: 'bar'}).then(() => {
     // success

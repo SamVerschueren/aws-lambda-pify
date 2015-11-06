@@ -20,25 +20,22 @@
   ],
   "keywords": [
     "aws",
-	"lambda",
-	"pify",
-	"promisify",
-	"promise",
-	"testing"
+    "lambda",
+    "pify",
+    "promisify",
+    "promise",
+    "testing"
   ],
   "dependencies": {
-    "aws-lambda-mock-context": "^0.2.0"
+    "aws-lambda-mock-context": "^1.0.0"
   },
   "devDependencies": {
     "ava": "*",
     "xo": "*"
   },
   "xo": {
-    "envs": [
-      "node"
-    ],
-	"ignore": [
+    "ignores": [
       "test/test.js"
-	]
+    ]
   }
 }
