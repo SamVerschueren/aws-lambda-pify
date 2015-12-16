@@ -26,7 +26,7 @@ fn({foo: 'bar'}).then(() => {
 
 ## API
 
-### pify(input)
+### pify(input, [options])
 
 Returns a promise wrapped version of the supplied Lambda function.
 
@@ -35,6 +35,12 @@ Returns a promise wrapped version of the supplied Lambda function.
 Type: `function`
 
 The AWS Lambda function.
+
+#### options
+
+Type: `object`
+
+[aws-lambda-mock-context](https://github.com/SamVerschueren/aws-lambda-mock-context#options) options object
 
 
 ## License
