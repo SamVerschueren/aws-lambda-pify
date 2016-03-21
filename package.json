@@ -1,6 +1,6 @@
 {
   "name": "aws-lambda-pify",
-  "version": "1.1.0",
+  "version": "2.0.0",
   "description": "Promisifies an AWS lambda function",
   "license": "MIT",
   "repository": "SamVerschueren/aws-lambda-pify",
