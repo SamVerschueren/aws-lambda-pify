@@ -9,6 +9,6 @@ test('result', async t => {
 	t.same(await fn(handler, opts)({hello: 'world'}), {hello: 'world', functionName: 'pify'});
 });
 
-test('error', async t => {
-	await t.throws(fn(handler)(), 'Event is undefined');
+test('error', t => {
+	t.throws(fn(handler)(), 'Event is undefined');
 });
