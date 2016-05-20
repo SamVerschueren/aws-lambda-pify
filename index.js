@@ -1,9 +1,9 @@
 'use strict';
-var context = require('aws-lambda-mock-context');
+const context = require('aws-lambda-mock-context');
 
-module.exports = function (fn, options) {
-	return function (event) {
-		var ctx = context(options);
+module.exports = (fn, options) => {
+	return event => {
+		const ctx = context(options);
 
 		fn.apply(this, [event, ctx]);
 

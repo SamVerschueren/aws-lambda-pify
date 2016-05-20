@@ -1,8 +1,8 @@
 'use strict';
-
-exports.handler = function (event, context) {
+exports.handler = (event, context) => {
 	if (event === undefined) {
-		return context.fail(new Error('Event is undefined'));
+		context.fail(new Error('Event is undefined'));
+		return;
 	}
 
 	event.functionName = context.functionName;

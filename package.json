@@ -10,7 +10,7 @@
     "url": "github.com/SamVerschueren"
   },
   "engines": {
-    "node": ">=0.10.0"
+    "node": ">=4"
   },
   "scripts": {
     "test": "xo && ava"
@@ -27,10 +27,13 @@
     "testing"
   ],
   "dependencies": {
-    "aws-lambda-mock-context": "^2.0.0"
+    "aws-lambda-mock-context": "^3.0.0"
   },
   "devDependencies": {
     "ava": "*",
     "xo": "*"
+  },
+  "xo": {
+    "esnext": true
   }
 }

@@ -43,6 +43,11 @@ Type: `object`
 [aws-lambda-mock-context](https://github.com/SamVerschueren/aws-lambda-mock-context#options) options object
 
 
+## Related
+
+- [aws-lambda-mock-context](https://github.com/SamVerschueren/aws-lambda-mock-context) - Mock context object.
+
+
 ## License
 
 MIT © [Sam Verschueren](http://github.com/SamVerschueren)
