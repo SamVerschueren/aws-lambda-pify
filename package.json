@@ -27,7 +27,8 @@
     "testing"
   ],
   "dependencies": {
-    "aws-lambda-mock-context": "^3.0.0"
+    "aws-lambda-mock-context": "^3.0.0",
+    "pify": "^2.3.0"
   },
   "devDependencies": {
     "ava": "*",

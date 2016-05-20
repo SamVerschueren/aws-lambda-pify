@@ -1,12 +1,12 @@
 'use strict';
 const context = require('aws-lambda-mock-context');
+const pify = require('pify');
 
 module.exports = (fn, options) => {
-	return event => {
-		const ctx = context(options);
+	const ctx = context(options);
 
-		fn.apply(this, [event, ctx]);
-
-		return ctx.Promise;
-	};
+	return event => Promise.race([
+		pify(fn)(event, ctx),
+		ctx.Promise
+	]);
 };

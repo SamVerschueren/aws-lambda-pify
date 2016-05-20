@@ -9,3 +9,14 @@ exports.handler = (event, context) => {
 
 	context.succeed(event);
 };
+
+exports.cbHandler = (event, context, cb) => {
+	if (event === undefined) {
+		cb(new Error('Event is undefined'));
+		return;
+	}
+
+	event.functionName = context.functionName;
+
+	cb(undefined, event);
+};
